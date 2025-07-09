@@ -52,11 +52,18 @@ The bot performs daily SAP control tasks to reduce manual effort in monitoring a
 
 This bot relies heavily on VBA (Visual Basic for Applications) macros to perform Excel operations that are inefficient or impractical using only UiPath activities.
 
-### VBA Macro Tasks:
-- Cleaning and validating raw SAP data
-- Applying complex formulas
-- Formatting sheets and columns
-- Creating structured reports
+### VBA Macro Tasks
+
+The bot leverages a set of VBA scripts located in the `VBA/` folder to handle advanced Excel operations, including:
+
+- Cleaning and removing unnecessary rows
+- Splitting columns (text-to-column) for multiple sheet types (e.g., BIK, PDDN, MEDICAL, COMMON, TRANSPORT, SAP)
+- Copying and organizing categorized rows
+- Filling down formulas and lookup values
+- Validating result flags (e.g., NA, FALSE)
+- Applying formatting (e.g., borders) and string conversion
+
+These VBA scripts allow the bot to efficiently transform SAP-exported data into a structured and validated report.
 
 ### Integration:
 - VBA scripts are stored in the `VBA/` folder.
