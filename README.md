@@ -19,9 +19,9 @@ The bot performs daily SAP control tasks to reduce manual effort in monitoring a
 
 | Folder/File           | Description                                      |
 |------------------------|--------------------------------------------------|
-| Flowchart.xaml         | Main workflow (entry point)                     |
+| Source Code/Flowchart.xaml         | Main workflow (entry point)                     |
 | VBA/                   | Folder containing Excel VBA macro files         |
-| project.json           | UiPath project metadata                         |
+| Source Code/project.json           | UiPath project metadata                         |
 | README.md              | This documentation                              |
 
 ## Workflow Overview
